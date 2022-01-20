@@ -270,8 +270,10 @@ body {
     top: -150px;
     left: 600px;
   } */
-  .opening-film {
-    width: 80vw;
+  .opening-film,
+  .making-film {
+    height: 70vh;
+    width: auto;
   }
   .section-contents {
     display: flex;
