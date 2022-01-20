@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: fadein 4s;
+  animation: fadein 4s;
+}
+.intro-logo {
+  color: #fff;
+  font-family: "Bodoni 11";
+  font-size: 8rem;
+
+  -webkit-animation: reveal 2.5s ease-in-out forwards 100ms,
+    linear infinite 1.5s;
+  animation: reveal 2.5s ease-in-out forwards 100ms, linear infinite 1500ms;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 15px;
+  }
+  100% {
+    background-size: 500%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 15px;
+  }
+  100% {
+    background-size: 500%;
+  }
+}

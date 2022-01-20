@@ -1,0 +1,181 @@
+@media screen and (max-width: 480px) {
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    width:200px;
+  }
+  
+  .members {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .outline {
+    width: 100%;
+    display: grid;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-items: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;  
+  }
+  
+  .card {
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    border-radius: 8px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .imgDiv{
+    position: relative;
+  }
+
+  .imgDescDiv {
+    position: absolute;
+  }
+
+  .name .mail {
+    opacity: 0%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    width:200px;
+  }
+
+  .members {
+    margin-left: 60px;
+    /* width: 100%; */
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2vh 0 2vh 60px; */
+  }
+
+  .outline {
+    width: 95%;
+    display: grid;
+    /* margin-top: 40px; */
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    justify-items: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    /* -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto auto auto;
+    /* grid-template-rows: auto auto auto auto auto auto auto;   */
+  }
+  /* .memLogo{
+    opacity: 100%;
+  }
+  .memLogo:hover .memLogo {
+    opacity: 0%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .memLogo2 {
+    opacity: 0%;
+  }
+  .memLogo:hover .memLogo2 {
+    opacity: 100%;
+    transition: all 0.3s ease-in-out;
+  } */
+  .card {
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    border-radius: 8px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .card:hover .imgDescDiv{
+    opacity: 100%;
+  }
+
+  .card:hover img{
+    transition: transform 1s;
+    filter: brightness(60%);
+  }
+
+  .imgDiv{
+    position: relative;
+  }
+
+  .imgDescDiv {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: #fff;
+    opacity: 0%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .name {
+    margin-bottom: 3px;
+    padding-left: 10px;
+    font-family: Manrope,sans-serif;
+    font-size: auto;
+    font-weight: 600;
+  }
+
+  .mail {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: Nanumsquarer,sans-serif;
+    font-size: auto;
+    font-weight: 400;
+  }
+
+  .scale {
+    width: 100%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .scale:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  .member{
+    width:100%;
+    overflow:hidden;
+    position: relative;
+  }
+}

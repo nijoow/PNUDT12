@@ -1,0 +1,268 @@
+@font-face {
+  src: url("../fonts/AppleSDGothicNeoR.ttf");
+  font-family: "Apple SD Gothic Neo";
+}
+@font-face {
+  src: url("../fonts/AppleSDGothicNeoB.ttf");
+  font-family: "Apple SD Gothic NeoB";
+}
+@media screen and (min-width: 480px) {
+  .contents {
+    position: relative;
+    white-space: nowrap;
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    margin: 2vh 0px;
+    overflow: hidden;
+    font-size: 1.5rem;
+    scroll-behavior: smooth;
+  }
+  html,
+  body {
+    background: url(../images/bg/texture.png) local;
+    font-family: "Apple SD Gothic Neo", "sans-serif";
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
+  .scroll-section {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    vertical-align: middle;
+    justify-content: space-between;
+  }
+  .section__introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 3vh;
+    height: 96vh;
+    width: 50%;
+  }
+  .introduce {
+    font-size: 1.6rem;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  .introduce_mobile{
+    display: none;
+  }
+  .exhibi {
+    line-height: 4vh;
+        margin-top: 4rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        animation-duration: 2.5s;
+    animation-name: slidein;
+  }
+  .open-web {
+    line-height: 8vh;
+        font-size: 8vh;
+        animation-duration: 3.0s;
+    animation-name: slidein;
+  }
+  .opening-offline {
+    font-size: 1.8rem;
+    font-weight:500;
+    animation-duration: 4.0s;
+    animation-name: slidein;
+  }
+  .opening-date {
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    animation-duration: 4.0s;
+    animation-name: slidein;
+  }
+  .bolder {
+    font-weight: bolder;
+    font-family: "Apple SD Gothic NeoB";
+  }
+  .opening-time {
+    margin-bottom: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+        font-weight: normal;
+
+        
+        animation-duration: 4.5s;
+    animation-name: slidein;
+  }
+  .opening-place {
+    font-weight:900;
+    font-size: 6vmin;
+    animation-duration: 5s;
+    animation-name: slidein;
+  }
+
+  .letter-front {
+    pointer-events: none;
+    height: -webkit-fill-available;
+  }
+  .height_ {
+    transition: ease 0.7s;
+    height: 22vh;
+    display: flex;
+  }
+  /*MEMORY 글자 위치*/
+  .section__letter-front {
+    position: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14vh;
+    margin-left: -15vw;
+    animation-duration: 5s;
+    animation-name: slidein2;
+  }
+  .letter-front__Top {
+    margin-left: 200px;
+  }
+  .letter-front__MORY {
+    margin-left: 0px;
+  }
+  .letter-front__RY {
+    margin-left: 300px;
+  }
+  .letter-front__MEMORY {
+    margin-left: 200px;
+  }
+  .letter-front__Middle {
+    margin: 6vh 0;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-family: "Apple SD Gothic Neo", "Spoqa Han Sans Neo", "sans-serif";
+    overflow-x: hidden;
+    background: url(../images/bg/texture.png);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .contents {
+    display: flex;
+    height: 92vh;
+    flex-direction: column;
+    font-size: 1.2rem;
+    width: 92vw;
+    margin: 4vw;
+  }
+  .section__letter-front {
+    
+    animation-duration: 5s;
+    animation-name: slidein2;
+    margin-top: auto;
+  }
+  .scroll-section {
+    text-align: left;
+  }
+  .height_ {
+    justify-content: center;
+    display: flex;
+    height: 22vw;
+  }
+  
+  .letter-front__Top {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .letter-front__MORY {
+    margin-left: 0px;
+  }
+  .letter-front__RY {
+    margin-left: 30px;
+  }
+  .letter-front__MEMORY {
+    margin-left: 20px;
+  }
+  .letter-front__Middle {
+    margin: 2vh 0;
+  }
+  .letter-front {
+    pointer-events: none;
+    flex-basis: auto;
+    height: 20vw;
+  }
+  .introduce {
+    display: none;
+  }
+  .introduce_mobile{
+    font-size: 1rem;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+  }
+  .exhibi {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    animation-duration: 2.5s;
+    animation-name: slidein;
+  }
+  .open-web {
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+    margin-top: 0.5rem;
+    animation-duration: 3.0s;
+    animation-name: slidein;
+  }
+  .bolder {
+    font-weight: bolder;
+    font-family: "Apple SD Gothic NeoB";
+  }
+  .open_information {
+    margin-top: 3rem;
+    text-align: right;
+    animation-duration: 3.5s;
+    animation-name: slideinR;
+  }
+  .opening-time {
+    animation-duration: 3.5s;
+    animation-name: slideinR;
+    font-size: 1rem;
+  }
+}
+.letter-front__blur {
+  opacity: 100%;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transition: all 1s;
+}
+.letter-front__blur:hover {
+  opacity: 0%;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  transition: all 1s ease-in-out;
+}
+@keyframes slidein {
+    from {
+      opacity: 0%;
+      margin-left: 10%;
+    }
+  
+    to {
+        opacity: 100%;
+      margin-left: 0%;
+    }
+  }
+  @keyframes slideinR {
+    from {
+      opacity: 0%;
+      margin-right: 10%;
+    }
+  
+    to {
+        opacity: 100%;
+      margin-right: 0%;
+    }
+  }
+@keyframes slidein2 {
+from {
+    opacity: 0%;
+}
+
+to {
+    opacity: 100%;
+}
+}
